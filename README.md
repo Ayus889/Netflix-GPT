@@ -2,6 +2,10 @@
 
 -> Create react app
 -> Configured TailwindCSS
+-> Routing of App
+-> created Sign In and Sign Up form
+-> Form validation
+-> useRef hook
 
 # Features
 
