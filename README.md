@@ -6,6 +6,13 @@
 -> created Sign In and Sign Up form
 -> Form validation
 -> useRef hook
+-> Firebase SetUp
+-> Firebase deployment
+-> Deploy our web app to production
+-> Implement SignUp and SignIn logic in foroum
+-> Created redux-store with userSlice
+-> Implemented signout features with firebase API
+-> Implemented Update API of firebase in authentication
 
 # Features
 
