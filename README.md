@@ -14,6 +14,12 @@
 -> Implemented signout features with firebase API
 -> Implemented Update API of firebase in authentication
 
+- Bug fix: Set up display name and profile pic while sign up
+- Buf fix: If user is logged in redirect it from /browse to login page.
+- Unsubscribe to onAuthSateChange callback.
+- Register TMDB API & after successful registration get access token
+- Get Data from TMDB Now Playing movie list API
+
 # Features
 
 // First page
