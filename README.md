@@ -1,30 +1,40 @@
                                                     ## Netflix - GPT ##
 
--> Create react app
--> Configured TailwindCSS
--> Routing of App
--> created Sign In and Sign Up form
--> Form validation
--> useRef hook
--> Firebase SetUp
--> Firebase deployment
--> Deploy our web app to production
--> Implement SignUp and SignIn logic in foroum
--> Created redux-store with userSlice
--> Implemented signout features with firebase API
--> Implemented Update API of firebase in authentication
+- Create react app
+- Configured TailwindCSS
+- Routing of App
+- created Sign In and Sign Up form
+- Form validation
+- useRef hook
+- Firebase SetUp
+- Firebase deployment
+- Deploy our web app to production
+- Implement SignUp and SignIn logic in foroum
+- Created redux-store with userSlice
+- Implemented signout features with firebase API
+- Implemented Update API of firebase in authentication
 
 - Bug fix: Set up display name and profile pic while sign up
 - Buf fix: If user is logged in redirect it from /browse to login page.
 - Unsubscribe to onAuthSateChange callback.
 - Register TMDB API & after successful registration get access token
 - Get Data from TMDB Now Playing movie list API
+- Create Custom Hook for nowPlaying Movies
+- Create movieSlice
+- update Store with movies Date
+- Divided browse page in two container
+- Main container and secondary container
+- Fetch Data for Trailer video to show in background like netflix
+- Update Store with trailer Video data
+- Embedded the Youtube video and make it autoplay and mute
+- Create Custom hook for useMovieTrailer video
 
 # Features
 
 // First page
--> Sign In / Sign Up form
--> Redirect to Browse page.
+
+- Sign In / Sign Up form
+- Redirect to Browse page.
 
 // Second page
 
