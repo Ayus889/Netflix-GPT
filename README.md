@@ -29,6 +29,13 @@
 - Embedded the Youtube video and make it autoplay and mute
 - Create Custom hook for useMovieTrailer video
 
+- Now build Secondary container
+- Fetch data for NowPlayingMovies
+- Update store with NowPlayingMovies data
+- Create Custom hooks for useNowPlayingMovies to fetch and show as a movie card on browser
+- Similarlly I'm created for Popular, Upcoming movies and Top rated list and show on browser
+- Created scrollable movies cards/ list.
+
 # Features
 
 // First page
