@@ -35,6 +35,7 @@
 - Create Custom hooks for useNowPlayingMovies to fetch and show as a movie card on browser
 - Similarlly I'm created for Popular, Upcoming movies and Top rated list and show on browser
 - Created scrollable movies cards/ list.
+- Scrollbar fixed using npm install tailwind-scrollbar-hide.
 
 # Features
 
