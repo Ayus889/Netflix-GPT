@@ -4,8 +4,12 @@ import { IMG_CDN_URL } from "../utils/constant";
 
 const MovieCard = ({ poster }) => {
   return (
-    <div className="w-48 pr-2 ">
-      <img alt="movie-card" src={IMG_CDN_URL + poster} />
+    <div className="w-40 pr-2 ">
+      <img
+        className="rounded-lg hover:animate-pulse"
+        alt="movie-card"
+        src={IMG_CDN_URL + poster}
+      />
     </div>
   );
 };

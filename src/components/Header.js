@@ -40,23 +40,28 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div className="absolute w-screen py-2 m-2 z-10 bg-gradient-to-b from-black flex justify-between">
-      <img className="w-44" src={LOGO} alt="logo" />
-      {user && (
-        <div className="flex p-4">
-          <img
-            className="w-12 rounded-xl"
-            alt="user-icon"
-            src={user?.photoURL}
-          />
-          <button
-            className=" font-bold text-white hover:bg-gray-400 hover:rounded-lg"
-            onClick={handleSignOut}
-          >
-            Sign Out
-          </button>
-        </div>
-      )}
+    <div className="">
+      <div
+        className="absolute z-10 flex w-full flex-row items-center justify-between bg-gradient-
+    to-b from-black px-3 md:flex-row"
+      >
+        <img className="w-44" src={LOGO} alt="logo" />
+        {user && (
+          <div className="flex p-4">
+            <img
+              className="w-12 rounded-xl pr-2"
+              alt="user-icon"
+              src={user?.photoURL}
+            />
+            <button
+              className=" font-bold text-white hover:bg-gray-400 hover:rounded-lg"
+              onClick={handleSignOut}
+            >
+              Sign Out
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

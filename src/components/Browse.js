@@ -11,7 +11,7 @@ const Browse = () => {
   useUpcomingMovies();
   useTopRatedMovies();
   return (
-    <div>
+    <div className=" overflow-x-hidden scrollbar-hide">
       <Header />
       <MainContainer />
       <SecondaryContainer />
