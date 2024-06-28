@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_URL } from "../utils/constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -88,7 +89,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src="https://shorturl.at/hsuw8" alt="signIn-logo" />
+        <img src={BG_URL} alt="signIn-logo" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

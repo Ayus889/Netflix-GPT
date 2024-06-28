@@ -37,6 +37,9 @@
 - Created scrollable movies cards/ list.
 - Scrollbar fixed using npm install tailwind-scrollbar-hide.
 
+- GPT Search features:
+- Created seperate GptSearch page and add button on header for accessing.
+
 # Features
 
 // First page
