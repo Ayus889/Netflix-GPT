@@ -4,8 +4,9 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
-import { LOGO } from "../utils/constant";
+import { LOGO, SUPPORTED_LANGUAGE } from "../utils/constant";
 import { toggleGptSearchView } from "../utils/gptSlice";
+import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ const Header = () => {
         navigate("/error");
       });
   };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -41,17 +43,31 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
 
+  const handleChangeLanguage = (e) => {
+    dispatch(changeLanguage(e.target.value));
+  };
+
   const handleGptSearchClick = () => {
     //Toogle features
     dispatch(toggleGptSearchView());
   };
-
+  //absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between
   return (
     <div className="">
-      <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+      <div className="w-screen absolute px-5 py-1 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
         <img className="w-44" src={LOGO} alt="logo" />
         {user && (
           <div className="flex p-4">
+            <select
+              className="my-6 mx-2 px-2 cursor-pointer bg-gray-800 text-white rounded-lg"
+              onChange={handleChangeLanguage}
+            >
+              {SUPPORTED_LANGUAGE.map((lang) => (
+                <option key={lang.indentifier} value={lang.indentifier}>
+                  {lang.name}
+                </option>
+              ))}
+            </select>
             <button
               className="px-4 py-2 my-5 rounded-lg bg-purple-800 text-white"
               onClick={handleGptSearchClick}

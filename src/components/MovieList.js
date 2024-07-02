@@ -2,7 +2,6 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  console.log(movies);
   return (
     <div className="overflow-x-hidden">
       <h1 className="text-3xl p-7 text-white ">{title}</h1>

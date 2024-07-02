@@ -39,6 +39,7 @@
 
 - GPT Search features:
 - Created seperate GptSearch page and add button on header for accessing.
+- Additional features: Developed MultiLingual gptSearch page.
 
 # Features
 
