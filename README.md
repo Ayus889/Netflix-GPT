@@ -39,7 +39,10 @@
 
 - GPT Search features:
 - Created seperate GptSearch page and add button on header for accessing.
-- Additional features: Developed MultiLingual gptSearch page.
+- ** Additional features: Developed MultiLingual gptSearch page. **
+- First integrate Gemini API (powered by google) with our react project.
+- Second using text enter by user we search in Gemini and get the required results.
+- Then with that results we search movie in TMDB with Search API and keep the movie data we get into our redux store.
 
 # Features
 

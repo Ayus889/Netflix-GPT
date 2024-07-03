@@ -18,3 +18,5 @@ export const SUPPORTED_LANGUAGE = [
   { indentifier: "hindi", name: "Hindi" },
   { indentifier: "spanish", name: "Spanish" },
 ];
+
+export const GEMINIAPI_KEY = "AIzaSyDWJeee2cUT1z688JsA2B0llCRI3c2Ccw0";
